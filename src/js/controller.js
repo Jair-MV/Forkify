@@ -44,9 +44,7 @@ const controlSearchResults = async function () {
         if (!query) return;
 
         // 2) Load search results
-        console.log("Cargando");
         await model.loadSearchResults(query);
-        console.log("Listo");
 
         // 3) Render search results
         resultsView.render(model.getSearchResultsPage());

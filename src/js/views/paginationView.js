@@ -28,7 +28,6 @@ class PaginationView extends View {
 
         // Page 1
         if (currentPage === 1) {
-            console.log("Página 1");
             return `
                 <button data-goto="${
                     currentPage + 1
@@ -43,7 +42,6 @@ class PaginationView extends View {
 
         // Last page
         if (currentPage === numPages) {
-            console.log("Last page");
             return `
                 <button data-goto="${
                     currentPage - 1
@@ -57,7 +55,6 @@ class PaginationView extends View {
         }
 
         // Other page
-        console.log("Middle page");
         return `
             <button data-goto="${
                 currentPage - 1
